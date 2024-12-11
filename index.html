@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Page</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+iframe#zenoo-embed {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    transition: height 0.3s ease;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Onboarding</h1>
+        <p>Please perform the onboarding via our partner below:</p>
+        <iframe id="zenoo-embed" width="300" height="0"></iframe>
+    </div>
+
+    <script
+    src="https://onboard-test-ie.zenoo.io/fb90552ee8d617afc8ab7fc00ba784992d8873c9/assets/embed.js"
+    iframe-id="zenoo-embed"
+  ></script>
+
+
+</body>
+</html>
